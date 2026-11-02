@@ -1,0 +1,72 @@
+{
+  "seul": [
+    {
+      "ok": true,
+      "appels": 6,
+      "temps": 10.880441665649414,
+      "rodi": 1.3923314000000002,
+      "tokens": {
+        "in": 13433,
+        "out": 993
+      },
+      "reponse": "Bonjour Koffi ! 😊\n\nLe beurre de karité 500 g (réf. P06) est en stock. Pour 3 pots livrés à Porto-Novo :\n- Articles : 10 500 FCFA\n- Livraison : 3 000 FCFA (24 à 48 h)\n- **Total : 13 500 FCFA**\n\nSoit environ **30 913,34 NGN** au taux du moment.\n\nVoulez-vous que je prépare la commande ? Dites-moi simplement « oui » et votre nom complet pour la livraison."
+    },
+    {
+      "ok": true,
+      "appels": 6,
+      "temps": 9.929284572601318,
+      "rodi": 1.6144598000000001,
+      "tokens": {
+        "in": 14784,
+        "out": 1310
+      },
+      "reponse": "Bonjour Afi ! 😊\n\n✅ 2 robes en wax (P05) : 22 000 FCFA chacune, en stock.\n❌ Sac en raphia en rupture. Alternative : sandales en cuir (P04), 9 000 FCFA.\n\nLivraison Calavi : 2 000 FCFA (24 à 48 h).\n**Total 2 robes : 46 000 FCFA**\n\nVous gardez les 2 robes, ou vous ajoutez les sandales ?"
+    },
+    {
+      "ok": true,
+      "appels": 5,
+      "temps": 7.279582738876343,
+      "rodi": 1.1359358,
+      "tokens": {
+        "in": 10995,
+        "out": 803
+      },
+      "reponse": "Bonjour ! 😊 Pour 1 Pagne wax 6 yards livré à Ouidah :\n\n- Pagne : 12 000 FCFA\n- Livraison : 3 500 FCFA (délai 24 à 48 h)\n- **Total : 15 500 FCFA, soit environ 23,62 €**\n\nIl est en stock. Souhaitez-vous le commander ?"
+    }
+  ],
+  "multi": [
+    {
+      "ok": false,
+      "appels": 20,
+      "temps": 63.16010355949402,
+      "rodi": 7.0464054,
+      "tokens": {
+        "in": 33811,
+        "out": 11867
+      },
+      "reponse": "Désolé, je n'arrive pas à finir ça tout de suite, Afi vous recontacte très vite 🙏"
+    },
+    {
+      "ok": true,
+      "appels": 11,
+      "temps": 28.563876390457153,
+      "rodi": 3.0683995,
+      "tokens": {
+        "in": 16599,
+        "out": 4792
+      },
+      "reponse": "Bonjour Afi 😊 Le sac en raphia est en rupture. Alternative : sandales en cuir à 9 000 FCFA.\nOption A : 2 robes wax, total 46 000 FCFA.\nOption B : 2 robes + sandales, total 55 000 FCFA.\nLivraison Calavi incluse, sous 24 à 48 h. Confirmez votre choix pour valider la commande."
+    },
+    {
+      "ok": true,
+      "appels": 16,
+      "temps": 37.16107964515686,
+      "rodi": 3.9103922,
+      "tokens": {
+        "in": 23711,
+        "out": 5595
+      },
+      "reponse": "Bonjour ! Le pagne wax 6 yards (P01) est disponible, 14 unités en stock.\nPrix : 12 000 FCFA, livraison à Ouidah : 3 500 FCFA, soit 15 500 FCFA au total (environ 23,62 EUR, indicatif).\nLivraison sous 24 à 48 h.\nMerci, à très vite ! 😊"
+    }
+  ]
+}

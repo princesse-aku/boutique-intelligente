@@ -1,0 +1,17 @@
+name = "boutique-intelligente"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+# Stock, commandes, historique, dédoublonnage, limites : un namespace KV.
+# Créer avec : npx wrangler kv namespace create KV   puis coller l'id ci-dessous.
+[[kv_namespaces]]
+binding = "KV"
+id = "570df50908724960a3ae2184e193e2d4"
+
+[vars]
+MODEL = "anthropic/claude-haiku-5-5"
+HISTORY_EXCHANGES = "4"      # N derniers échanges gardés par client
+MAX_MSG_PER_HOUR = "20"      # plafond de messages par client et par heure
+
+# Secrets (jamais dans le code) : npx wrangler secret put <NOM>
+#   RODIUMAI_API_KEY, GREEN_API_URL, GREEN_ID_INSTANCE, GREEN_API_TOKEN, WEBHOOK_TOKEN, AFI_CHAT_ID

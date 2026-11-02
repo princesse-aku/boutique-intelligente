@@ -1,0 +1,7 @@
+.env
+__pycache__/
+data/stock.json
+data/commandes.json
+node_modules/
+.wrangler/
+.dev.vars

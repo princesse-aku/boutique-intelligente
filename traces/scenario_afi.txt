@@ -1,0 +1,46 @@
+
+👤 Je m'appelle Afi. Je veux 2 robes en wax et 1 sac en raphia, livrés à Calavi.
+[étape 1] → chercher_produits({"mot_cle": "robe wax"})
+           ← {"produits": [{"ref": "P01", "nom": "Pagne wax 6 yards", "prix_fcfa": 12000}, {"ref": "P05", "nom": "Robe en wax", "prix_fcfa": 22000}]}
+[étape 1] → chercher_produits({"mot_cle": "sac raphia"})
+           ← {"produits": [{"ref": "P03", "nom": "Sac en raphia", "prix_fcfa": 7500}]}
+[étape 1] → frais_livraison({"zone": "Calavi"})
+           ← {"zone": "Calavi", "frais_fcfa": 2000, "delai": "24 à 48 h"}
+[étape 2] → verifier_stock({"ref": "P05"})
+           ← {"ref": "P05", "nom": "Robe en wax", "prix_fcfa": 22000, "stock": 5}
+[étape 2] → verifier_stock({"ref": "P03"})
+           ← {"ref": "P03", "nom": "Sac en raphia", "prix_fcfa": 7500, "stock": 0, "rupture": true, "alternatives_en_stock": [{"ref": "P04", "nom": "Sandales en cuir", "prix_fcfa": 9000, "stock": 8}]}
+[étape 3] → calculer_total({"articles": [{"ref": "P05", "quantite": 2}], "zone": "Calavi"})
+           ← {"lignes": [{"ref": "P05", "nom": "Robe en wax", "quantite": 2, "prix_unitaire_fcfa": 22000, "sous_total_fcfa": 44000}], "sous_total_fcfa": 44000, "frais_livraison_fcfa": 2000, "total_fcfa": 46000, "zone": "Calavi", "delai": "24 à 48 h"}
+  ✗ évaluation (règle code) : réponse de 80 mots ou plus : raccourcis.
+  ✓ évaluation : OK
+🤖 Bonjour Afi ! 😊
+
+✅ 2 robes en wax (P05) : 22 000 FCFA chacune, en stock.
+
+❌ Le sac en raphia est en rupture. Alternative : sandales en cuir (P04), 9 000 FCFA, en stock.
+
+🚚 Livraison Calavi : 2 000 FCFA, 24 à 48 h.
+
+Total 2 robes : **46 000 FCFA**.
+
+Voulez-vous ajouter les sandales ou commander seulement les robes ?
+
+👤 Oui, je confirme les 2 robes sans le sac, enregistre la commande.
+[étape 1] → creer_commande({"client": "Afi", "articles": [{"ref": "P05", "quantite": 2}], "zone": "Calavi"})
+           ← {"erreur": "commande refusée par Afi (validation humaine). Informe poliment le client, rien n'est enregistré."}
+  ✓ évaluation : OK
+🤖 Bonjour Afi, désolé : la commande n'a pas pu être enregistrée, car elle n'a pas été validée de notre côté. Rien n'a été débité ni réservé. Je peux relancer la demande ou vous aider autrement. Souhaitez-vous que je la réessaie ?
+
+👤 Oui, je confirme les 2 robes sans le sac, enregistre la commande.
+[étape 1] → creer_commande({"client": "Afi", "articles": [{"ref": "P05", "quantite": 2}], "zone": "Calavi"})
+           ← {"commande_enregistree": 1, "total_fcfa": 46000, "delai": "24 à 48 h"}
+  ✓ évaluation : OK
+🤖 Bonjour Afi, votre commande est enregistrée ! 🎉
+
+✅ 2 robes en wax (P05) : 44 000 FCFA
+🚚 Livraison Calavi : 2 000 FCFA
+💰 Total : **46 000 FCFA**
+⏱️ Livraison sous 24 à 48 h.
+
+Merci pour votre confiance ! 😊

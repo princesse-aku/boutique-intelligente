@@ -1,0 +1,15 @@
+{
+  "produits": [
+    {"ref": "P01", "nom": "Pagne wax 6 yards", "categorie": "tissu", "prix": 12000, "stock": 14},
+    {"ref": "P02", "nom": "Chemise bazin homme", "categorie": "vetement", "prix": 18500, "stock": 3},
+    {"ref": "P03", "nom": "Sac en raphia", "categorie": "accessoire", "prix": 7500, "stock": 0},
+    {"ref": "P04", "nom": "Sandales en cuir", "categorie": "accessoire", "prix": 9000, "stock": 8},
+    {"ref": "P05", "nom": "Robe en wax", "categorie": "vetement", "prix": 22000, "stock": 5},
+    {"ref": "P06", "nom": "Beurre de karité 500 g", "categorie": "soin", "prix": 3500, "stock": 40}
+  ],
+  "zones": {
+    "Cotonou": 1000, "Akpakpa": 1000, "Fidjrossè": 1500,
+    "Calavi": 2000, "Porto-Novo": 3000, "Ouidah": 3500
+  },
+  "delai": "24 à 48 h"
+}
