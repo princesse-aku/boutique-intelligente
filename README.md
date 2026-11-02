@@ -3,6 +3,10 @@
 Agent IA pour la boutique d'Afi (pagnes et accessoires, marché Dantokpa, Cotonou). Il répond aux clients, vérifie le
 stock, calcule la livraison, convertit les prix et enregistre les commandes **après validation humaine**.
 
+**Agent en production :** [https://boutique-intelligente.boutique-intelligente-worker.workers.dev](https://boutique-intelligente.boutique-intelligente-worker.workers.dev)
+(Cloudflare Worker branché sur WhatsApp via Green API ; ouvert dans un navigateur, il répond « Boutique intelligente : ok »,
+les clients lui écrivent sur WhatsApp, voir la section « En production ».)
+
 Boucle respectée : penser → agir → observer → évaluer. Chaque réponse est évaluée avant d'être envoyée ; si elle échoue,
 l'agent est relancé avec la critique (2 reprises au maximum, voir les limites en fin de document).
 
@@ -130,7 +134,7 @@ Outil utilisé : `wrangler` (CLI Cloudflare, `npm install` dans `worker/`), qui 
 
 ### En production
 
-**URL du Worker :** `https://boutique-intelligente.boutique-intelligente-worker.workers.dev`
+**URL du Worker :** [https://boutique-intelligente.boutique-intelligente-worker.workers.dev](https://boutique-intelligente.boutique-intelligente-worker.workers.dev)
 (GET renvoie « Boutique intelligente : ok » ; POST sans jeton renvoie 401.)
 
 Trois numéros WhatsApp : la **boutique** (liée à l'instance Green API, les clients lui écrivent), **Afi** (valide les
